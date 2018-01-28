@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Contact Manager</title>
+	<script type="text/javascript" src="code.js"></script>
+	<link href="styles.css" rel="stylesheet">	
+</head>
+<body>
+
+<form id="form1" runat="server">
+
+<div class="out">
+<div class="middle">
+<div class="in">
+
+<div title="wrap">
+<div id="title">
+    Contact Manager
+</div>
+</div>
+
+<div id="loginDiv">
+	<input type="text" id="loginName" placeholder="UserName"> <br />
+	<input type="text" id="loginPassword" placeholder="Password"><br />
+	<button type="button" id="loginButton" runat="server" class="buttons" onclick="doLogin();"> Login </button>
+	<span id="loginResult"></span>
+</div>
+<div id="loggedInDiv" style="display:none; visibility:hidden;">
+	Logged in as <span id="userName"></span><br />
+	<button type="button" id="logoutButton" class="buttons" onclick="doLogout();"> Log Out </button>
+</div>
+<div id="accessUIDiv" style="display:none; visibility:hidden;">
+	<br />
+
+	Search for Contact: <input type="text" id="searchText">
+	<button type="button" id="searchColorButton" class="buttons" onclick="searchColor();"> Search Contact </button><br />
+	<span id="colorSearchResult"></span>
+	<select id="colorList" style="display:none; visibility:hidden;">
+	</select><br /><br />
+
+	Add Contact: <input type="text" id="colorText">
+	<button type="button" id="addColorButton" class="buttons" onclick="addColor();"> Add Contact </button><br />
+	<span id="colorAddResult"></span>
+</div>
+
+    <br />
+
+</div>
+</div>
+</div>
+
+</form>
+</body>
+</html>
